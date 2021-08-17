@@ -1,0 +1,17 @@
+package br.com.isidrocorp.eventdash.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//aqui precisamos anotar a classe alarme para fazer efetivamente o mapeamento
+//da classe para a tabela e dos atributos para as colunas da tabela
+
+@Entity
+@Table(name="itmn_alarme")
+public class Alarme {
+	
+	private int id;
+	private String nome;
+	private String descricao;
+	
+}

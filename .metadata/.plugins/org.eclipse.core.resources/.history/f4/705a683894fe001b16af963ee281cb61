@@ -1,0 +1,10 @@
+package br.com.isidrocorp.eventdash.model;
+
+public class Alarme {
+	
+	private int id;
+	private String nome;
+	private String descricao;
+	
+
+}

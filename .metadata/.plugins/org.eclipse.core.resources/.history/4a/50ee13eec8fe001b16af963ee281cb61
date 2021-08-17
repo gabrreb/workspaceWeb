@@ -1,0 +1,14 @@
+package br.com.isidrocorp.eventdash.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "itmn_equipamento")
+public class Equipamento {
+
+	private int id;
+	private String hostname;
+	private String ipaddr;
+	
+}

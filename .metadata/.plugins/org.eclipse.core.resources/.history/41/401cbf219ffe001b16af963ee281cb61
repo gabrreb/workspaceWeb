@@ -1,0 +1,21 @@
+package br.com.isidrocorp.eventdash.controller;
+
+import java.util.ArrayList;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.isidrocorp.eventdash.dao.AlarmeDAO;
+import br.com.isidrocorp.eventdash.model.Alarme;
+
+@RestController
+public class AlarmeController {
+	
+	private AlarmeDAO dao;
+
+	// quero criar um método que me retorne TODOS os Alarmes gravados no banco
+	@GetMapping("/alarmes")
+	public ArrayList<Alarme> recuperarTodos(){
+		
+	}
+}

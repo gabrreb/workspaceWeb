@@ -1,0 +1,10 @@
+package br.com.isidrocorp.eventdash.model;
+
+import java.time.LocalDate;
+
+public class Evento {
+
+		private int numSeq;
+		private LocalDate dataEvento;
+		
+}

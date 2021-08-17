@@ -1,0 +1,21 @@
+package br.com.isidrocorp.eventdash.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.isidrocorp.eventdash.dao.UsuarioDAO;
+
+@RestController
+public class UsuarioController {
+	
+	@Autowired
+	private UsuarioDAO dao;
+	
+	@PostMapping("/login")
+	public Usuario fazerLogin(Usuario dadoLogin) {
+		
+		Usuario res = dao.findByEmailOrRacf(dadosLogin.getEmail(), dadosLgin.getRacf());
+		return res;
+	}
+
+}

@@ -1,0 +1,8 @@
+package br.com.isidrocorp.hello.controller;
+
+public class HelloController {
+	
+	public String sayHello() {
+		return "Hello World!! 1 prog em Spring Boot!";
+	}
+}

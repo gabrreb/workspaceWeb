@@ -1,0 +1,13 @@
+package br.com.isidrocorp.eventdash.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.isidrocorp.eventdash.dao.EventoDAO;
+
+@RestController
+public class EventoController {
+
+		@Autowired
+		private EventoDAO dao;
+}
