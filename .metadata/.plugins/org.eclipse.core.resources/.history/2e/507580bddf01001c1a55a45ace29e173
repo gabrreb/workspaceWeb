@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.isidrocorp.eventdash.dao.EventoDAO;
-import br.com.isidrocorp.eventdash.model.Alarme;
 import br.com.isidrocorp.eventdash.model.Evento;
 
 @CrossOrigin("*")
@@ -29,12 +28,5 @@ public class EventoController {
 			
 			lista = dao.findAllByDataEventoBetween(inicio, dtFim);
 			return lista;
-		}
-		
-		@GetMapping("/eventosporalarme")
-		public ArrayList<Evento> recuperarTodosPorAlarme(@RequestParam(name = "id") int id){
-			Alarme alarme = new Alarme();
-			alarme.setId(id);
-			return dao.findAllByAlarme(alarme);
 		}
 }
